@@ -8,7 +8,5 @@ RUN yum install -y krb5-workstation && \
 
 VOLUME ["/krb5","/dev/shm","/etc/krb5.conf.d"]
 
-USER 1001
-
 ENTRYPOINT ["/rekinit.sh"]
 
